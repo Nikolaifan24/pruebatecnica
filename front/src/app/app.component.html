@@ -1,0 +1,137 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  .header{
+    background-color: #6278F7;
+    text-align: center;
+}
+
+.header img {
+    max-width: 100%;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 80px 50px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formulario form{
+    background-color: #f7f7f7;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 25%);
+    border-radius: 20px;
+    padding: 8px 100px;
+    flex:1;
+}
+.formcontato__input{
+    width: 90%;
+}
+
+.campo{
+    margin: 24px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.campo label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.campo input{
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border:none;
+    padding: 30px 20px;
+    outline-color: #6278F7;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.campo-color input{
+    height: 40px;
+    padding: 5px 20px;
+}
+
+.boton{
+    background-color: #6278F7;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px 32px;
+    border: none;
+    color: #ffffff;
+    margin: 32px 0;
+    cursor: pointer;
+}
+
+.boton:hover{
+    color: #95FFD4;
+}
+
+</style>
+
+<main class="main">
+  <div class="content">
+    <header className="header">
+      <img src="/images/header.jpg" alt='Org' />
+  </header>
+  <section class="formulario" id="contacto">
+    <div  class="formulario__contacto">
+        <div class="formulario--esquerda">
+            <img class="formulario__img" src="/front/images/Logo.png">
+        </div>
+        <div class="formulario__text">
+            <h2 class="formulario__title">Registro Usuairo</h2>
+            <h3 class="formulario__subtext">Complete el siguiente formulario </h3>
+            <form class="formulario__form" name="form">
+                <div><input class="campo" type="text" id="name" name="nombre" placeholder="Nombre" ></div>
+                <div><input class="campo" type="email" id="emails" name="email" placeholder="E-mail" > </div>
+                <div><input class="campo" type="text" id="subject" name="asunto" placeholder="Assunto" ></div>
+                <div><textarea class="formulario__textarea" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea></div>
+                <button type="submit" class="boton" id = "button1" onclick="validar()">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</section>
+  </div>
+  <footer className='footer'>
+    <div className='redes'>
+        <a href=''>
+            <img src="/images/facebook.png" alt='Facebook' />
+        </a>
+        <a href=''>
+            <img src="/images/twitter.png" alt='twitter' />
+        </a>
+        <a href=''>
+            <img src="/images/instagram.png" alt='instagram' />
+        </a>
+    </div>
+    <img src='/images/Logo.png' alt='org' />
+    
+</footer>
+</main>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<router-outlet />
